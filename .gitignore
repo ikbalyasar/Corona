@@ -25,6 +25,9 @@ DerivedData/
 ## Obj-C/Swift specific
 *.hmap
 
+# Cocoapods
+Pods/
+
 ## App packaging
 *.ipa
 *.dSYM.zip
