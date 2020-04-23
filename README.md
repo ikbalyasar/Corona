@@ -8,7 +8,7 @@
  * Open source data
  * MVVM 
 
-### You can use it by adding your own freqs:
+### App Video:
 <img src="https://github.com/ikbalyasar/Corona/blob/master/corona.gif" height="667" width="375">
 
 
