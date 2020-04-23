@@ -1,0 +1,22 @@
+/* 
+  Localizable.strings
+  smsGonderPro
+
+  Created by İkbal Yaşar on 10/14/18.
+  Copyright © 2018 İkbal Yaşar. All rights reserved.
+*/
+
+
+"Confirmed: " = "Confirmado: ";
+"Dead: " = "Muerto: ";
+"Recovry: " = "Recuperado: ";
+"Deaths" = "Muerto";
+"Recovered" = "Recuperado";
+"Confirmed" = "Confirmado";
+"Confirmed: %d" = "Confirmado: %d";
+"Recovry: %d" = "Recuperado: %d" ;
+"Dead: %d" = "Muerto: %d";
+"Map" = "Mapa";
+"List" = "Lista";
+
+

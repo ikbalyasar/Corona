@@ -1,0 +1,20 @@
+PODS:
+  - Alamofire (5.0.4)
+  - OneSignal (2.12.6)
+
+DEPENDENCIES:
+  - Alamofire
+  - OneSignal
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - OneSignal
+
+SPEC CHECKSUMS:
+  Alamofire: 0fe5fd24b4298dc377a6550da7d5f1b30e286fcb
+  OneSignal: a6df91542d1cf133b9dd19d89f2b533d8f2d3163
+
+PODFILE CHECKSUM: ff10080824b508daf3daf63ab964e361da8898de
+
+COCOAPODS: 1.5.3

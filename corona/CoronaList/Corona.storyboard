@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vKn-9P-Ny8">
+    <device id="retina5_9" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nunito-Bold.ttf">
+            <string>Nunito-Bold</string>
+        </array>
+        <array key="Nunito-Regular.ttf">
+            <string>Nunito-Regular</string>
+        </array>
+        <array key="Nunito-SemiBold.ttf">
+            <string>Nunito-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Corona View Controller-->
+        <scene sceneID="GzV-lN-fg7">
+            <objects>
+                <viewController storyboardIdentifier="CoronaViewController" id="vKn-9P-Ny8" customClass="CoronaViewController" customModule="corona" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ERq-3R-4t1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" name="ic_cellColor"/>
+                        <viewLayoutGuide key="safeArea" id="xun-mu-xQK"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="coronaCell" rowHeight="230" id="Eui-bA-i1O" customClass="CoronaTableViewCell" customModule="corona" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="230"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Eui-bA-i1O" id="ory-bl-yvd">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="230"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I5K-fi-eFf">
+                                            <rect key="frame" x="21" y="16" width="333" height="198"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Türkiye" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="QLF-uL-OzV">
+                                                    <rect key="frame" x="10" y="10" width="288" height="26"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="26" id="Kcn-7t-Lu5"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="20"/>
+                                                    <color key="textColor" name="ic_labelColor"/>
+                                                    <color key="highlightedColor" name="ic_labelColor"/>
+                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="119" translatesAutoresizingMaskIntoConstraints="NO" id="3dY-iZ-Mw8">
+                                                    <rect key="frame" x="5" y="46" width="323" height="50"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Dbr-FZ-BAS">
+                                                            <rect key="frame" x="0.0" y="4" width="102" height="42"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8uO-Cj-s3b">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="102" height="21"/>
+                                                                    <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
+                                                                    <color key="textColor" name="ic_labelColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zvh-aS-eV7">
+                                                                    <rect key="frame" x="0.0" y="21" width="102" height="21"/>
+                                                                    <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="18"/>
+                                                                    <color key="textColor" name="ic_labelColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="8wA-S8-uls">
+                                                            <rect key="frame" x="221" y="4" width="102" height="42"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Mg-oz-8CR">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="102" height="21"/>
+                                                                    <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
+                                                                    <color key="textColor" name="ic_labelColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vYx-xJ-rdd">
+                                                                    <rect key="frame" x="0.0" y="21" width="102" height="21"/>
+                                                                    <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="18"/>
+                                                                    <color key="textColor" name="ic_labelColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="YTo-fP-8Y2"/>
+                                                    </constraints>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="uHL-2B-d6R">
+                                                    <rect key="frame" x="10" y="106" width="313" height="82"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f2N-vy-GIB">
+                                                            <rect key="frame" x="0.0" y="0.0" width="97.666666666666671" height="82"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nk0-8q-7IY">
+                                                                    <rect key="frame" x="5" y="45" width="87.666666666666671" height="25"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="25" id="UIC-t3-JiR"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="18"/>
+                                                                    <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2cq-Hd-LzO">
+                                                                    <rect key="frame" x="5" y="10" width="87.666666666666671" height="25"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="25" id="oGJ-x8-FV1"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
+                                                                    <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" red="0.97266000509999995" green="0.83237797020000004" blue="0.34880524870000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <constraints>
+                                                                <constraint firstItem="Nk0-8q-7IY" firstAttribute="leading" secondItem="f2N-vy-GIB" secondAttribute="leading" constant="5" id="EsK-0j-kGw"/>
+                                                                <constraint firstItem="Nk0-8q-7IY" firstAttribute="top" secondItem="2cq-Hd-LzO" secondAttribute="bottom" constant="10" id="GwO-pW-SbJ"/>
+                                                                <constraint firstAttribute="trailing" secondItem="Nk0-8q-7IY" secondAttribute="trailing" constant="5" id="Pxs-nn-2jO"/>
+                                                                <constraint firstAttribute="trailing" secondItem="2cq-Hd-LzO" secondAttribute="trailing" constant="5" id="nN8-5N-m6q"/>
+                                                                <constraint firstItem="2cq-Hd-LzO" firstAttribute="leading" secondItem="f2N-vy-GIB" secondAttribute="leading" constant="5" id="ndA-vE-Duf"/>
+                                                                <constraint firstItem="2cq-Hd-LzO" firstAttribute="top" secondItem="f2N-vy-GIB" secondAttribute="top" constant="10" id="vTd-de-OR5"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J1C-yy-QNe">
+                                                            <rect key="frame" x="107.66666666666666" y="0.0" width="97.666666666666657" height="82"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ypt-Hd-lPs">
+                                                                    <rect key="frame" x="5" y="45" width="87.666666666666671" height="25"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="25" id="hNu-Ev-Ab0"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="18"/>
+                                                                    <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAX-fy-8bI">
+                                                                    <rect key="frame" x="5" y="10" width="87.666666666666671" height="25"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="25" id="wvV-HH-OLk"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
+                                                                    <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" red="0.9453980327" green="0.50884073969999999" blue="0.38775742050000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="trailing" secondItem="LAX-fy-8bI" secondAttribute="trailing" constant="5" id="3S7-S8-sW7"/>
+                                                                <constraint firstItem="LAX-fy-8bI" firstAttribute="top" secondItem="J1C-yy-QNe" secondAttribute="top" constant="10" id="ClZ-PQ-RGU"/>
+                                                                <constraint firstItem="Ypt-Hd-lPs" firstAttribute="top" secondItem="LAX-fy-8bI" secondAttribute="bottom" constant="10" id="Pq5-24-eKO"/>
+                                                                <constraint firstItem="LAX-fy-8bI" firstAttribute="leading" secondItem="J1C-yy-QNe" secondAttribute="leading" constant="5" id="QDY-w6-Pdc"/>
+                                                                <constraint firstAttribute="trailing" secondItem="Ypt-Hd-lPs" secondAttribute="trailing" constant="5" id="qd3-1v-gGZ"/>
+                                                                <constraint firstItem="Ypt-Hd-lPs" firstAttribute="leading" secondItem="J1C-yy-QNe" secondAttribute="leading" constant="5" id="sfM-dS-1Dv"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="avm-VI-m6K">
+                                                            <rect key="frame" x="215.33333333333334" y="0.0" width="97.666666666666657" height="82"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rVL-Lz-Ta2">
+                                                                    <rect key="frame" x="5" y="45" width="87.666666666666671" height="25"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="25" id="WLX-2O-MSc"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="18"/>
+                                                                    <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJX-gU-Sw4">
+                                                                    <rect key="frame" x="5" y="10" width="87.666666666666671" height="25"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="25" id="oIN-ii-r53"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
+                                                                    <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" red="0.20286828279999999" green="0.54313236470000004" blue="0.47846007350000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <constraints>
+                                                                <constraint firstItem="gJX-gU-Sw4" firstAttribute="leading" secondItem="avm-VI-m6K" secondAttribute="leading" constant="5" id="Mup-j9-6gC"/>
+                                                                <constraint firstItem="gJX-gU-Sw4" firstAttribute="top" secondItem="avm-VI-m6K" secondAttribute="top" constant="10" id="RKE-NQ-E0d"/>
+                                                                <constraint firstItem="rVL-Lz-Ta2" firstAttribute="top" secondItem="gJX-gU-Sw4" secondAttribute="bottom" constant="10" id="TWR-j1-QNG"/>
+                                                                <constraint firstAttribute="trailing" secondItem="gJX-gU-Sw4" secondAttribute="trailing" constant="5" id="VCx-Hr-STu"/>
+                                                                <constraint firstItem="rVL-Lz-Ta2" firstAttribute="leading" secondItem="avm-VI-m6K" secondAttribute="leading" constant="5" id="WdV-UV-bof"/>
+                                                                <constraint firstAttribute="trailing" secondItem="rVL-Lz-Ta2" secondAttribute="trailing" constant="5" id="ojM-cP-AaT"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="97" id="a4H-gB-Upv"/>
+                                                    </constraints>
+                                                </stackView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="details" translatesAutoresizingMaskIntoConstraints="NO" id="TFS-UG-NMa">
+                                                    <rect key="frame" x="293" y="0.0" width="40" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="40" id="ID1-86-RXb"/>
+                                                        <constraint firstAttribute="height" constant="25" id="Iyb-Sg-myb"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" name="ic_viewColor"/>
+                                            <constraints>
+                                                <constraint firstItem="uHL-2B-d6R" firstAttribute="leading" secondItem="I5K-fi-eFf" secondAttribute="leading" constant="10" id="8Oz-LL-Pmi"/>
+                                                <constraint firstItem="3dY-iZ-Mw8" firstAttribute="leading" secondItem="I5K-fi-eFf" secondAttribute="leading" constant="5" id="Eje-9l-a2A"/>
+                                                <constraint firstItem="3dY-iZ-Mw8" firstAttribute="top" secondItem="QLF-uL-OzV" secondAttribute="bottom" constant="10" id="Gol-SZ-l0P"/>
+                                                <constraint firstAttribute="trailing" secondItem="TFS-UG-NMa" secondAttribute="trailing" id="IJe-gj-0aM"/>
+                                                <constraint firstAttribute="trailing" secondItem="3dY-iZ-Mw8" secondAttribute="trailing" constant="5" id="MdV-M1-ujr"/>
+                                                <constraint firstItem="QLF-uL-OzV" firstAttribute="top" secondItem="I5K-fi-eFf" secondAttribute="top" constant="10" id="f65-7h-N8F"/>
+                                                <constraint firstAttribute="trailing" secondItem="QLF-uL-OzV" secondAttribute="trailing" constant="35" id="fpS-KJ-FRD"/>
+                                                <constraint firstItem="QLF-uL-OzV" firstAttribute="leading" secondItem="I5K-fi-eFf" secondAttribute="leading" constant="10" id="liW-Sy-ECs"/>
+                                                <constraint firstAttribute="trailing" secondItem="uHL-2B-d6R" secondAttribute="trailing" constant="10" id="qdk-Ii-we3"/>
+                                                <constraint firstItem="TFS-UG-NMa" firstAttribute="top" secondItem="I5K-fi-eFf" secondAttribute="top" id="tSD-MA-BQ9"/>
+                                                <constraint firstAttribute="bottom" secondItem="uHL-2B-d6R" secondAttribute="bottom" constant="10" id="xgH-j3-49K"/>
+                                                <constraint firstItem="uHL-2B-d6R" firstAttribute="top" secondItem="3dY-iZ-Mw8" secondAttribute="bottom" constant="10" id="zDw-65-AUi"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" name="ic_cellColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="I5K-fi-eFf" secondAttribute="trailing" constant="5" id="3r0-zX-Cgh"/>
+                                        <constraint firstItem="I5K-fi-eFf" firstAttribute="top" secondItem="ory-bl-yvd" secondAttribute="topMargin" constant="5" id="DK6-NH-oNx"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="I5K-fi-eFf" secondAttribute="bottom" constant="5" id="IHJ-n8-fhE"/>
+                                        <constraint firstItem="I5K-fi-eFf" firstAttribute="leading" secondItem="ory-bl-yvd" secondAttribute="leadingMargin" constant="5" id="vgD-me-aRw"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" name="ic_cellColor"/>
+                                <connections>
+                                    <outlet property="cityName" destination="QLF-uL-OzV" id="JoL-iH-RCe"/>
+                                    <outlet property="confirmedLabel" destination="2cq-Hd-LzO" id="j72-eq-m5m"/>
+                                    <outlet property="confirmedValueLabel" destination="Nk0-8q-7IY" id="6Jv-wR-Lvt"/>
+                                    <outlet property="confirmedView" destination="f2N-vy-GIB" id="ptd-kb-DId"/>
+                                    <outlet property="coronaView" destination="I5K-fi-eFf" id="rDl-Rr-vvL"/>
+                                    <outlet property="deadLabel" destination="LAX-fy-8bI" id="Jiu-Ol-Zm9"/>
+                                    <outlet property="deadPersentLabel" destination="8uO-Cj-s3b" id="ZG9-C1-Ufx"/>
+                                    <outlet property="deadPersentValueLabel" destination="Zvh-aS-eV7" id="gz3-hq-wDQ"/>
+                                    <outlet property="deadValueLabel" destination="Ypt-Hd-lPs" id="5mM-5o-O1K"/>
+                                    <outlet property="deadView" destination="J1C-yy-QNe" id="7tI-NO-rzH"/>
+                                    <outlet property="detailImageView" destination="TFS-UG-NMa" id="P8u-Wk-Arl"/>
+                                    <outlet property="recovryLabel" destination="gJX-gU-Sw4" id="cI7-29-OW4"/>
+                                    <outlet property="recovryPersentLabel" destination="9Mg-oz-8CR" id="DAd-F5-aNc"/>
+                                    <outlet property="recovryPersentValueLabel" destination="vYx-xJ-rdd" id="DGY-fw-Gej"/>
+                                    <outlet property="recovryValueLabel" destination="rVL-Lz-Ta2" id="SO8-H0-gTt"/>
+                                    <outlet property="recovryView" destination="avm-VI-m6K" id="h8V-0l-8YF"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="vKn-9P-Ny8" id="qTI-4n-nPO"/>
+                            <outlet property="delegate" destination="vKn-9P-Ny8" id="dzg-Np-TrW"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="tableView" destination="ERq-3R-4t1" id="NIw-L2-rfQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k0X-am-vwV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128.80000000000001" y="169.56521739130437"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="details" width="43" height="27"/>
+        <namedColor name="ic_cellColor">
+            <color red="0.85098039215686272" green="0.87058823529411766" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ic_labelColor">
+            <color red="0.098039215690000001" green="0.1058823529" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ic_viewColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

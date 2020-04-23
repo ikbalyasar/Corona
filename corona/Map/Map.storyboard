@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vKn-9P-Ny8">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Map View Controller-->
+        <scene sceneID="GzV-lN-fg7">
+            <objects>
+                <viewController storyboardIdentifier="MapViewController" id="vKn-9P-Ny8" customClass="MapViewController" customModule="Corona" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BNZ-bO-rhc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsScale="YES" showsTraffic="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sjg-bZ-nJr">
+                                <rect key="frame" x="0.0" y="-44" width="375" height="822"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ag-N4-CDr">
+                                <rect key="frame" x="303" y="646" width="52" height="52"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="52" id="R8x-Mb-QkX"/>
+                                    <constraint firstAttribute="height" constant="52" id="fOm-w9-TRw"/>
+                                </constraints>
+                                <state key="normal" image="ic_link">
+                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="shareButton:" destination="vKn-9P-Ny8" eventType="touchUpInside" id="Yzz-As-c4c"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Sjg-bZ-nJr" firstAttribute="trailing" secondItem="HgA-Aw-ocO" secondAttribute="trailing" id="2Nr-b5-mqh"/>
+                            <constraint firstItem="Sjg-bZ-nJr" firstAttribute="leading" secondItem="HgA-Aw-ocO" secondAttribute="leading" id="6FW-BJ-Evf"/>
+                            <constraint firstItem="Sjg-bZ-nJr" firstAttribute="top" secondItem="BNZ-bO-rhc" secondAttribute="top" constant="-44" id="JyD-Gp-U6N"/>
+                            <constraint firstItem="HgA-Aw-ocO" firstAttribute="trailing" secondItem="4ag-N4-CDr" secondAttribute="trailing" constant="20" id="Qzl-Te-oYl"/>
+                            <constraint firstItem="Sjg-bZ-nJr" firstAttribute="bottom" secondItem="HgA-Aw-ocO" secondAttribute="bottom" id="WKM-F0-NsX"/>
+                            <constraint firstItem="HgA-Aw-ocO" firstAttribute="bottom" secondItem="4ag-N4-CDr" secondAttribute="bottom" constant="80" id="dNw-8u-dK4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="HgA-Aw-ocO"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="Sjg-bZ-nJr" id="ltP-8r-uH3"/>
+                        <outlet property="shareButton" destination="4ag-N4-CDr" id="YmV-2d-aCg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k0X-am-vwV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="243.47826086956525" y="204.91071428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_link" width="33" height="33"/>
+    </resources>
+</document>
